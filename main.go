@@ -19,8 +19,5 @@ func main() {
 	}
 	input := Download(day)
 	var t T
-	//reflect.ValueOf(&t).MethodByName(method).Call([]reflect.Value{})
 	reflect.ValueOf(&t).MethodByName(method).Call([]reflect.Value{reflect.ValueOf(input)})
-	//m := reflect.ValueOf(reflect.Zero(nil)).MethodByName("Day1Part2")
-	//m.Call(reflect.Zero(nil))
 }
